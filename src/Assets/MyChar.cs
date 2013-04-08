@@ -7,6 +7,8 @@ public class MyChar : MonoBehaviour {
 	//número de moedas coletadas
 	public int coins = 0;
 	public GameObject corpo;
+	public GameObject braco;
+	public GameObject bracoParado;
 	
 	//variável que guarda o componente CharacterMotor existente nesse objeto
 	CharacterMotor motor;
@@ -16,10 +18,12 @@ public class MyChar : MonoBehaviour {
 		//preenche a variável com o CharacterMotor
 		this.motor = this.GetComponent<CharacterMotor>();
 		this.corpo = GameObject.Find("Corpo");
+		this.braco = GameObject.Find("Braco");
+		this.bracoParado = GameObject.Find("Bracoparado");
 	}
 	
-	//função chamada a cada frames
-	void Update () {
+	
+	void FixedUpdate () {
 		
 		this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, 0f);
 		//a função Input.GetAxis(...) funciona ao mesmo tempo para setas do teclado, WASD, joysticks e volantes
@@ -32,10 +36,16 @@ public class MyChar : MonoBehaviour {
 		if(h == -1){
 	
 			corpo.transform.rotation = new Quaternion(0f,-180f,0f,0f);
+			if(!braco.GetComponent<AudioSource>().isPlaying && motor.inputJump == false && motor.grounded){
+				braco.GetComponent<AudioSource>().Play();
+			}
 		
 			
 		}else if(h == 1){
 			corpo.transform.rotation = new Quaternion(0f,0f,0f,0f);
+			if(!braco.GetComponent<AudioSource>().isPlaying && motor.inputJump == false && motor.grounded){
+				braco.GetComponent<AudioSource>().Play();
+			}
 			
 		}
 		
@@ -51,9 +61,19 @@ public class MyChar : MonoBehaviour {
 		//se o eixo vertical é positivo (jogador está pressionando para cima) ativa (ou não) o pulo do CharacterMotor
 		if(v > 0){
 			motor.inputJump = true;
+			if(!bracoParado.GetComponent<AudioSource>().isPlaying && motor.grounded){
+				bracoParado.GetComponent<AudioSource>().Play();
+			}
+			
 		}else{
 			motor.inputJump = false;
 		}
+		
+	}
+	//função chamada a cada frames
+	void Update () {
+		
+		
 		
 	}
 	
