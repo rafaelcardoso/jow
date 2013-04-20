@@ -22,6 +22,7 @@ public class ativaEspinho : MonoBehaviour {
 		BarraArmadilha = GameObject.Find("BarraArmadilha");
 		espinho espinhoScript = BarraArmadilha.GetComponent<espinho>();
         espinhoScript.move = true;
+		Debug.Log("ola");
 		
 		
 		
