@@ -20,14 +20,6 @@ public class correBola : MonoBehaviour {
 		
 		this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, 0.09948632f);
 		
-		/*if(this.transform.position.x > 9){
-			this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, 0f);
-			vSpeed = speed * new Vector3(-3,0,0);
-    		this.rigidbody.MovePosition(rigidbody.position + vSpeed * Time.deltaTime);	
-		}*/
-		
-		
-		
 		
 	}
 	
