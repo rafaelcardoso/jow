@@ -16,8 +16,6 @@ public class morrer : MonoBehaviour {
 	void Update () {
 		
 		audio.Play();
-		
-		//this.transform.position = new Vector3(Mathf.Sin(Random.Range(0f,0.2f)*Time.time),Mathf.Sin(Random.Range(0f,0.2f)*Time.time),0f);
 	
 	}
 }
