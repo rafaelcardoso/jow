@@ -27,10 +27,10 @@ Project developed for the discipline of Game Development, in the university cent
 
 This game was made by a group of 5 students
 
-Rafael Cardoso: lead programmer, sound, stage designer
-Rogerio Nunes: stage designer, lighting
-Marcelo Vanderley: stage designer, programmer
-Thiago Siqueira: stage designer, programmer
+Rafael Cardoso: lead programmer, sound, stage designer<br/>
+Rogerio Nunes: stage designer, lighting<br/>
+Marcelo Vanderley: stage designer, programmer<br/>
+Thiago Siqueira: stage designer, programmer<br/>
 Adelson Barreto: presenter and moral support so far
 
 ## License
