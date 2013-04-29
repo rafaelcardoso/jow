@@ -8,7 +8,7 @@ public class correBola : MonoBehaviour {
 	public Vector3 vSpeed;
 	public GameObject seguraBola;
 	public GameObject corpo;
-	
+	public GameObject pedraFogo;
 	void Start () {
 
 		this.corpo = GameObject.Find("Corpo");
@@ -28,6 +28,8 @@ public class correBola : MonoBehaviour {
 			this.rigidbody.AddForce(Vector3.left * 4);	
 		}else{
 			this.rigidbody.Sleep();
+			pedraFogo = GameObject.Find("PedraParticulas");
+			pedraFogo.GetComponent<ParticleSystem>().Stop();
 		}
         
     }

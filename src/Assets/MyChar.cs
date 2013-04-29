@@ -36,14 +36,14 @@ public class MyChar : MonoBehaviour {
 		if(h == -1){
 	
 			corpo.transform.rotation = new Quaternion(0f,-180f,0f,0f);
-			if(!braco.GetComponent<AudioSource>().isPlaying && motor.inputJump == false && motor.grounded){
+			if(!braco.GetComponent<AudioSource>().isPlaying && motor.inputJump == false && motor.grounded && motor.canControl){
 				braco.GetComponent<AudioSource>().Play();
 			}
 		
 			
 		}else if(h == 1){
 			corpo.transform.rotation = new Quaternion(0f,0f,0f,0f);
-			if(!braco.GetComponent<AudioSource>().isPlaying && motor.inputJump == false && motor.grounded){
+			if(!braco.GetComponent<AudioSource>().isPlaying && motor.inputJump == false && motor.grounded && motor.canControl){
 				braco.GetComponent<AudioSource>().Play();
 			}
 			
@@ -61,7 +61,7 @@ public class MyChar : MonoBehaviour {
 		//se o eixo vertical é positivo (jogador está pressionando para cima) ativa (ou não) o pulo do CharacterMotor
 		if(v > 0){
 			motor.inputJump = true;
-			if(!bracoParado.GetComponent<AudioSource>().isPlaying && motor.grounded){
+			if(!bracoParado.GetComponent<AudioSource>().isPlaying && motor.grounded && motor.canControl){
 				bracoParado.GetComponent<AudioSource>().Play();
 			}
 			
