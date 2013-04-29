@@ -10,7 +10,7 @@ Project developed for the discipline of Game Development, in the university cent
 
 ## Playing
 
-1. Open the executable file src/Build/indiana.exe
+1. Open the executable file at src/Build/indiana.exe
 2. Save the Jow!
 
 ## Contributing
@@ -32,3 +32,7 @@ Rogerio Nunes: stage designer, lighting
 Marcelo Vanderley: stage designer, programmer
 Thiago Siqueira: stage designer, programmer
 Adelson Barreto: presenter and moral support so far
+
+## License
+
+[MIT license](http://mit-license.org/).
