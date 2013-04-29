@@ -64,6 +64,7 @@
      <Compile Include="Assets\fim.cs" />
      <Compile Include="Assets\final.cs" />
      <Compile Include="Assets\gameover.cs" />
+     <Compile Include="Assets\kill.cs" />
      <Compile Include="Assets\tiro.cs" />
      <Compile Include="Assets\tremecamera.cs" />
      <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
