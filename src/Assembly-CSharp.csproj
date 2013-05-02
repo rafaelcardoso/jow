@@ -44,31 +44,47 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Elevado10.cs" />
      <Compile Include="Assets\Elevador.cs" />
+     <Compile Include="Assets\Elevador2.cs" />
+     <Compile Include="Assets\Elevador3.cs" />
+     <Compile Include="Assets\Final2.cs" />
      <Compile Include="Assets\Menu.cs" />
      <Compile Include="Assets\MyChar.cs" />
      <Compile Include="Assets\NewBehaviourScript.cs" />
      <Compile Include="Assets\VoltarParaTelaInicial.cs" />
      <Compile Include="Assets\abrePorta1.cs" />
      <Compile Include="Assets\abrePorta2.cs" />
+     <Compile Include="Assets\abrePorta3.cs" />
      <Compile Include="Assets\acendeTocha.cs" />
      <Compile Include="Assets\acertar.cs" />
      <Compile Include="Assets\ativa.cs" />
+     <Compile Include="Assets\ativa2.cs" />
      <Compile Include="Assets\ativaBola.cs" />
      <Compile Include="Assets\ativaEspinho.cs" />
+     <Compile Include="Assets\ativabala.cs" />
      <Compile Include="Assets\aumentar.cs" />
+     <Compile Include="Assets\barrinha.cs" />
+     <Compile Include="Assets\barrinha2.cs" />
+     <Compile Include="Assets\barrinha3.cs" />
      <Compile Include="Assets\braco.cs" />
      <Compile Include="Assets\correBola.cs" />
      <Compile Include="Assets\creditos.cs" />
+     <Compile Include="Assets\detectaPorta.cs" />
      <Compile Include="Assets\espinho.cs" />
      <Compile Include="Assets\fim.cs" />
      <Compile Include="Assets\final.cs" />
+     <Compile Include="Assets\fire.cs" />
      <Compile Include="Assets\gameover.cs" />
      <Compile Include="Assets\kill.cs" />
+     <Compile Include="Assets\stone.cs" />
+     <Compile Include="Assets\stone2.cs" />
      <Compile Include="Assets\tiro.cs" />
+     <Compile Include="Assets\tocapedra.cs" />
      <Compile Include="Assets\tremecamera.cs" />
      <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
+     <None Include="Assets\Materials\anubis\archibase.net.txt" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
